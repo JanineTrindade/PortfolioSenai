@@ -4,6 +4,24 @@
     
 }
 
+li{
+    list-style-type: none;
+}
+
+/* @media screen and (min-width: 601px){
+    p{
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    p{
+        font-size: 40px;
+        text-align: center;
+    }
+} */
+
 
 /* Tablet */
 /* @media screen and(max-width: 768px) {
@@ -228,7 +246,6 @@
 
    #circulo1{
        flex-wrap: wrap;
-
        margin: 60px;
        width: 91%;
        height: 100%;
@@ -247,6 +264,8 @@
 
    }
 
+   
+
    #circulo2{
     flex-wrap: wrap;
    height: 300px;
@@ -257,12 +276,14 @@
    left: 20px;
    background: rgb(255, 255, 255);
    background-image: url("../imagens/LOGO.png");
-   
    background-repeat: no-repeat;
    background-size: cover;
    float:left;
 
    }
+
+   
+
 
    #circulo3{
     height: 100px;
@@ -285,10 +306,11 @@
     width: 26%;
     /* border: 1px solid black; */
     position: absolute;
+    text-align: center;
     align-items: center;
     top: 380px;
     left: 480px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Josefin Slab', serif;
     color:white
    }
@@ -305,9 +327,28 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     position: absolute;
     align-items: center;
+    text-align:left;
     top: 500px;
     left: 230px;
+    /* border: 1px solid black; */
+    padding-top: 26px;
+    padding-left: 27px;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+    color: rgba(255, 255, 255, 0.747);
    }
+
+.itens1::before {
+    content: "❐ ";
+}
+
+.itens2::before {
+    content: "❑ ";
+}
+
+.itens3::before {
+    content: "❒ ";
+}
 
    #circulo5{
     flex-wrap: wrap;
@@ -321,8 +362,17 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     position: absolute;
     align-items: center;
+    text-align:left;
     top: 500px;
     left: 650px;
+    padding-top: 34px;
+    padding-left: 27px;
+    font-size: 23px;
+    font-family: 'Josefin Slab', serif;
+    color: rgba(255, 255, 255, 0.747);
+    /* border: 1px solid black; */
+    
+   
    }
 
    #botao{
@@ -333,6 +383,9 @@
     left: 230px;
     height: 60px;
     width: 300px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 23px;
+    
     
    }
 
@@ -384,7 +437,8 @@
         padding: 100px ;
         width: 600px;
         top: 130px;
-        left: 90px;
+        left: 100px;
+        
         
 
     }
@@ -394,6 +448,8 @@
         width: 60px;
         top: -10px;
         left: 50px;
+        text-align: center;
+        
         
 
     }
@@ -431,5 +487,51 @@
         width: 100%;
     }
     
+}
+
+/* ///////////////PAGINA 2///////////////// */
+
+#titulo_pag1{
+    height: 170px;
+    width: 400%;
+    /* border: 1px solid black; */
+    text-align:center;
+    justify-content: center;
+    padding-top: 1px;
+    /* top: 30px; */
+    /* left: 360px; */
+    font-size: 50px;
+    font-family: 'Vidaloka', serif;
+    color:white;
+    /* float: left; */
+    
+
+   }
+
+   #container_carrosel{
+    /* padding: 100px 100px 0 100px; */
+    /* border: 1px solid black; */
+    float: left;
+    
+   }
+
+   #fundo_transparente{
+    flex-wrap: wrap;
+    margin: 60px;
+    width: 91%;
+    height: 100%;
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 60px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position:static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
